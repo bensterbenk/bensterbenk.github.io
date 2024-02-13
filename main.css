@@ -244,4 +244,8 @@ html {
     color: #333;
     font-weight: bold;
   }
+  a {
+    position: relative;
+    z-index: 9999; /* Adjust the z-index value as needed */
+}
   
