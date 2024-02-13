@@ -96,7 +96,7 @@ var makeItRain = function () {
                   if (char === '*') {
                       coloredText += `<span style="color: ${getRandomColor()}">${char}</span>`;
                   } else {
-                      coloredText += `<span style="color: black">${char}</span>`;
+                      coloredText += `<span style="color: white">${char}</span>`;
                   }
               }
   
