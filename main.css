@@ -6,7 +6,7 @@ html {
     height: 100%;
     margin: 0;
     overflow: hidden;
-    background: linear-gradient(to bottom, #502ce0, rgb(255, 255, 255));
+    background: linear-gradient(to bottom, #5712ac, rgb(0, 0, 0));
   }
   
   .rain {
