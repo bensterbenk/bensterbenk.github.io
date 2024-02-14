@@ -30,7 +30,7 @@ var makeItRain = function () {
         's; animation-duration: 0.5' +
         randoHundo +
         's;"></div>' +
-        '<img class="svg" src="./noun-lily-172671.svg" alt="heart" style="fill: ' +
+        '<img class="svg" src="https://www.svgrepo.com/show/54156/lily.svg" alt="heart" style="fill: ' +
         randomColor +
         ';">' +
         '</div>';
@@ -50,7 +50,7 @@ var makeItRain = function () {
         's; animation-duration: 0.5' +
         randoHundo +
         's;"></div>' +
-        '<img class="svg" src="./noun-lily-172671.svg" alt="heart" style="fill: ' +
+        '<img class="svg" src="https://www.svgrepo.com/show/54156/lily.svg" style="fill: ' +
         randomColor +
         ';">' +
         '</div>';
