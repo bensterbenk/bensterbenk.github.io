@@ -31,8 +31,8 @@ html {
   .drop {
     position: absolute;
     bottom: 100%;
-    width: 15px;
-    height: 120px;
+    width: 30px;
+    height: 240px;
     pointer-events: none;
     animation: drop 0.5s linear infinite;
   }
