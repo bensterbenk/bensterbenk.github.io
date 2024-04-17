@@ -241,12 +241,6 @@ p a {
   }
   
   /* Left align even list items */
-  .content li:nth-child(even) {
-    background-color: lightblue;
-  }
-  .content li:nth-child(odd) {
-    background-color: lightgreen;
-  }
   .content li:nth-child(even) p{
     
     width: 50%;
