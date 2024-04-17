@@ -1,27 +1,42 @@
-document.addEventListener("DOMContentLoaded", function() {
-  // Variable to store the integer
-  let myInteger = 1;
+//this is where we apply opacity to the arrow
+$(window).scroll( function(){
 
-  // Get the "About" list item
-  const aboutItem = document.getElementById("aboutItem");
+  //get scroll position
+  var topWindow = $(window).scrollTop();
+  //multipl by 1.5 so the arrow will become transparent half-way up the page
+  var topWindow = topWindow * 1.5;
+  
+  //get height of window
+  var windowHeight = $(window).height();
+      
+  //set position as percentage of how far the user has scrolled 
+  var position = topWindow / windowHeight;
+  //invert the percentage
+  position = 1 - position;
 
-  // Add click event listener to the "About" list item
-  aboutItem.addEventListener("click", function() {
-      // Update the integer to 2 when "About" is clicked
-      myInteger = 2;
-      console.log("Integer is now:", myInteger);
+  //define arrow opacity as based on how far up the page the user has scrolled
+  //no scrolling = 1, half-way up the page = 0
+  $('.arrow-wrap').css('opacity', position);
 
-      // Check if myInteger is 2
-      if (myInteger === 2) {
-          // Clear the existing HTML content
-          document.body.innerHTML = "";
+});
 
-          // Create a new header element
-          const header = document.createElement("h1");
-          header.textContent = "Test";
 
-          // Append the header to the body
-          document.body.appendChild(header);
+
+
+
+
+//Code stolen from css-tricks for smooth scrolling:
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
       }
+    }
   });
 });
