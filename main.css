@@ -217,14 +217,12 @@ pre {
 }
 
 p {
-  color:#555;
   font-size:0.9em;
   margin-top:1.5em;
   margin-bottom:1.5em;
 }
 
 p a {
-  color:#14b5d1;
   text-decoration:none;
 }
 .content ul {
