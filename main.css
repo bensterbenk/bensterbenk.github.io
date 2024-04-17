@@ -115,17 +115,19 @@ border-color: #111 transparent transparent transparent;
 
 
 header {
+  display: flex;
+  justify-content: center; /* Horizontally center the items */
+  align-items: center; /* Vertically center the items */
   text-align: center;
-  font-family:'Maven Pro', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   font-size: 30px;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;
-  padding:2em 4em;
-  height:calc(100% - 3em);
-  margin-bottom: -20px; /* Adjust the negative margin */
+  padding: 2em 4em;
+  height: calc(100% - 3em);
 
 }
 
