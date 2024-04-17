@@ -125,6 +125,8 @@ header {
   letter-spacing: 0.15em;
   padding:2em 4em;
   height:calc(100% - 3em);
+  margin-bottom: -20px; /* Adjust the negative margin */
+
 }
 
 header ul { 
@@ -179,7 +181,7 @@ header a:hover:after {
   float:left;
   width:70%;
   margin:0 15%;
-  padding:2em 0;
+  padding:1em 0;
 }
 
 h1 {
